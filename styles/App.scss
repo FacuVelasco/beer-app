@@ -22,13 +22,47 @@ header.ant-layout-header {
     color: $white;
     font-size: 2em;
   }
-  .navbar {
+  nav.navbar {
     width: 100vw;
     height: 100vh;
     background-color: $white;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .anticon-close {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: $dark-green;
+      font-size: 2em;
+      &:active {
+        color: rgba($dark-green, 0.8);
+        font-weight: bold;
+      }
+    }
+    ul {
+      margin: 0;
+      margin-top: 5em;
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      text-align: center;
+      color: $dark-green;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2em;
+      font-weight: 900;
+      &:hover {
+        color: rgba($dark-green, 0.8);
+      }
+      &:active {
+        color: rgba($dark-green, 0.8);
+      }
+    }
   }
 }
 
