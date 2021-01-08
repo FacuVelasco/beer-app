@@ -1,7 +1,9 @@
 import Head from "next/head";
 import { Layout } from "antd";
 
-const { Header, Footer, Content } = Layout;
+import Header from "./Header";
+
+const { Footer, Content } = Layout;
 
 import "antd/dist/antd.css";
 
@@ -14,7 +16,7 @@ export default function Home({ children }) {
       </Head>
 
       <Layout>
-        <Header>Header</Header>
+        <Header />
         <Content>{children}</Content>
         <Footer>Beer App all rights reserved 2021</Footer>
       </Layout>
