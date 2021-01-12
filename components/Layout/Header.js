@@ -11,7 +11,7 @@ export default function HeaderComponent() {
   const [showSidebar, setSidebar] = React.useState(false);
 
   return (
-    <Header>
+    <Header className="over">
       <Link href="/">
         <h3>Beer App</h3>
       </Link>
@@ -25,6 +25,9 @@ export default function HeaderComponent() {
             </Link>
             <Link href="/about">
               <li className="text">ABOUT</li>
+            </Link>
+            <Link href="/beers">
+              <li className="text">BEERS</li>
             </Link>
           </ul>
           <Image

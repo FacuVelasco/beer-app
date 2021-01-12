@@ -7,12 +7,14 @@ const { Footer, Content } = Layout;
 
 import "antd/dist/antd.css";
 
-export default function Home({ children }) {
+export default function LayoutComponent({ children }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Patagonia Beer App</title>
+        <meta property="og:title" content="My page title" key="title" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout>

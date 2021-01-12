@@ -68,6 +68,17 @@ header.ant-layout-header {
 
 .content {
   margin: 1em;
+  &.home-float {
+    position: fixed;
+    z-index: 1;
+  }
+  &.home-float.top {
+    top: 70px;
+  }
+  &.home-float.bottom {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 .title {
@@ -75,6 +86,10 @@ header.ant-layout-header {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 900;
+  &.white {
+    color: $white;
+    text-align: right;
+  }
 }
 
 .text {
@@ -82,4 +97,62 @@ header.ant-layout-header {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 500;
+}
+
+.item-list-beer {
+  display: flex;
+  padding: 1em;
+  border-radius: 0.5em;
+  justify-content: space-between;
+  background-color: rgba($dark-green, 0.1);
+  box-shadow: 5px 10px 15px 0px rgba($dark-green, 0.3);
+  &:hover {
+    background-color: rgba($dark-green, 0.3);
+  }
+}
+
+.pagination {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 0 1em;
+  }
+  a {
+    color: $green;
+  }
+  a:visited {
+    color: $dark-green;
+  }
+}
+
+.detail-header {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+.info {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: $dark-green;
+  box-shadow: 5px 10px 15px 0px $dark-green;
+  color: $yellow;
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+  }
+}
+
+.over {
+  z-index: 5;
 }
